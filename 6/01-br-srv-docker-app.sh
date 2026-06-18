@@ -133,7 +133,7 @@ log "Starting the application stack"
 docker compose \
     --env-file "$ENV_FILE" \
     --file "$COMPOSE_FILE" \
-    up -d
+    up -d --force-recreate
 
 log "Container status"
 docker compose \
